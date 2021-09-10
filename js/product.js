@@ -26,12 +26,12 @@ function make_products(products) {
     product_container.innerHTML += `
 
           <div class = "products">
-              <img src="${product.image}" class = "product-image">
+              <img src="${product.product_picture}" class = "product-image">
               <div class = "product-content"> 
                   <h4 class = "product-title"> ${product.product_name}</h4>
-                  <p class = "product-description"> ${product.brand}</p>
+                  <p class = "product-description"> ${product.description}</p>
                   <p class = "product-price">R${product.price} </p>
-                  <button onclick="addToCart(${product.prod_id})">Add to Cart</button>
+                  <button onclick="addToCart(${product.order_id})">Add to Cart</button>
               
               </div>
               
@@ -45,7 +45,7 @@ make_products();
 function addToCart(prod_id) {
   console.log(products.data);
   let product = products.data.find((item) => {
-    return item.prod_id == prod_id;
+    return item.order_id == order_id;
   });
   
   cart.push(product);
@@ -53,7 +53,7 @@ function addToCart(prod_id) {
   localStorage.setItem("cart", JSON.stringify(cart));
   renderCart(storedCartitems);
   
-  console.log(prod_id);
+  console.log(order_id);
   
   
 }
@@ -66,12 +66,12 @@ function renderCart(cartItems) {
     cartItems.map((cartItem) => {
       cartContainer.innerHTML += `
       <div class = "products">
-            <img src="${cartItem.image}" class = "product-image">
+            <img src="${cartItem.product_picture}" class = "product-image">
             <div class = "product-content"> 
                 <h4 class = "product-title"> ${cartItem.product_name}</h4>
-                <p class = "product-description"> ${cartItem.brand}</p>
+                <p class = "product-description"> ${cartItem.des}</p>
                 <p class = "product-price">R${cartItem.price} </p>
-                <button class ="revome_cart" onclick="removeItem(${cartItems.prod_id})">Remove item</button>
+                <button class ="revome_cart" onclick="removeItem(${cartItems.order_id})">Remove item</button>
             </div>
             
         </div>
