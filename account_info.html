@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <!-- Box icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+    <!--FontAwesome Link-->
+    <script src="https://kit.fontawesome.com/eb54f77c32.js" crossorigin="anonymous"></script>
+    <title>User Info</title>
+    <link rel="stylesheet" href="styles/account.css"/>
+    <script src="js/user_information.js"></script>
+</head>
+<body>
+    <div id="user-info"></div>
+    </div>
+    <div class="update-info">
+		<div class="delete">
+				<input id="updatename" type="text" placeholder="Edit first name" />
+				<button class="search-btn" type="submit">Update</button>
+			</form>
+			<form method="PUT" onsubmit="event.preventDefault(); updatelastName()" >
+				<input id="updatelastname" type="text" placeholder="Edit last name" />
+				<button class="search-btn" type="submit">Update</button>
+			</form>
+			<form method="PUT" onsubmit="event.preventDefault(); updateUsername()" >
+				<input id="updateusername" type="text" placeholder="Edit username" />
+				<button class="search-btn" type="submit">Update</button>
+
+			</form>
+			<form method="PUT" onsubmit="event.preventDefault(); updatePassword()">
+				<input id="updatepassword" type="text" placeholder="Edit password" />
+				<button class="search-btn" type="submit">Update</button>
+			</form>
+			<form method="PUT" onsubmit="event.preventDefault(); updatephoneNUmber()" >
+
+				<input id="updatephonenumber" type="text" placeholder="Edit phone number" />
+				<button class="search-btn" type="submit">Update</button>
+			</form>
+			<form method="PUT" onsubmit="event.preventDefault(); updateuserEmail()" >
+				<input id="updateuseremail" type="text" placeholder="Edit user email" />
+				<button class="search-btn" type="submit">Update</button>
+
+			</form>
+			<button class="delete-button" onclick="deleteUser()"> delete profile</button>
+
+</body>
+</html>

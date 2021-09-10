@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Website Icon -->
+  <link rel="shortcut icon" href="images/outline.png" type="image/png">
+  <!-- Box icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+  <!--FontAwesome Link-->
+  <script src="https://kit.fontawesome.com/eb54f77c32.js" crossorigin="anonymous"></script>
+    <title>Check Out Section</title>
+    <script src="https://kit.fontawesome.com/eb54f77c32.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/checkout.css">
+   
+</head>
+<body>
+    <div class="navbar">
+		<nav class="navigation">
+
+			<!-- Logo -->
+			<div class="logo">
+				<img class="image-logo" src="images/outline.png" alt="Forever Logo">
+			</div>
+			
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a href="#home" class="nav-link scroll-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="product.html" class="nav-link">Products</a>
+        </li>
+        <li class="nav-item">
+          <a href="#about" class="nav-link scroll-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="#contact" class="nav-link scroll-link">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a href="account_info.html" class="nav-link scroll-link">Account</a>
+        </li>
+        <li class="nav-item">
+          <a href="cart.html" class="nav-link icon"><i class="bx bx-shopping-bag"></i></a>
+        </li>
+      </ul>
+    </div>
+
+    <a href="cart.html" class="cart-icon">
+      <i class="bx bx-shopping-bag"></i>
+    </a>
+
+    <div class="hamburger">
+      <i class="bx bx-menu"></i>
+    </div>
+  </div>
+</nav>
+    
+    <!-- ==== Intro Section Start ==== -->
+		
+	</div>
+  <section>
+<div class="wrapper">
+    <div class="container">
+        <form action="https://lee-buka2907.herokuapp.com/checkout/" method="POST">
+            <h1>
+                <i class="fas fa-shipping-fast"></i>
+                Shipping Details
+            </h1>
+            <div class="name">
+                <div>
+                    <label for="f-name">First</label>
+                    <input type="text" name="f-name">
+                </div>
+                <div>
+                    <label for="l-name">Last</label>
+                    <input type="text" name="l-name">
+                </div>
+            </div>
+            <div class="street">
+                <label for="name">Street</label>
+                <input type="text" name="address">
+            </div>
+            <div class="address-info">
+                <div>
+                    <label for="city">City</label>
+                    <input type="text" name="city">
+                </div>
+                <div>
+                    <label for="state">State</label>
+                    <input type="text" name="state">
+                </div>
+                <div>
+                    <label for="zip">Zip</label>
+                    <input type="text" name="zip">
+                </div>
+            </div>
+            <h1>
+                <i class="far fa-credit-card"></i> Payment Information
+            </h1>
+            <div class="cc-num">
+                <label for="card-num">Credit Card No.</label>
+                <input type="text" name="card-num">
+            </div>
+            <div class="cc-info">
+                <div>
+                    <label for="card-num">Exp</label>
+                    <input type="text" name="expire">
+                </div>
+                <div>
+                    <label for="card-num">CCV</label>
+                    <input type="text" name="security">
+                </div>
+            </div>
+            <div class="btns">
+                <button>Purchase</button>
+                <button>Back to cart</button>
+            </div>
+        </form>
+    </div>
+</div>
+  </section>
+  <script src="js/checkout.js"></script>
+  
+    
+</body>
+</html>

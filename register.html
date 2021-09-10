@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="images/outline.png" type="image/png">
+  <!-- Box icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+  <!--FontAwesome Link-->
+  <script src="https://kit.fontawesome.com/eb54f77c32.js" crossorigin="anonymous"></script>
+  <title>Forever Registration</title>
+  <link rel="stylesheet" href="styles/registration_styles.css">
+  <script src="js/register.js"></script>
+</head>
+<body>
+    <header>
+		<nav class="navigation">
+
+			<!-- Logo -->
+			<div class="logo">
+				<img class="image-logo" src="images/outline.png" alt="Forever Living">
+			</div>
+
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a href="#home" class="nav-link scroll-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="product.html" class="nav-link">Products</a>
+        </li>
+        <li class="nav-item">
+          <a href="#about" class="nav-link scroll-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="#contact" class="nav-link scroll-link">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a href="account_info.html" class="nav-link scroll-link">Account</a>
+        </li>
+        <li class="nav-item">
+          <a href="cart.html" class="nav-link icon"><i class="bx bx-shopping-bag"></i></a>
+        </li>
+      </ul>
+    </div>
+
+    <a href="cart.html" class="cart-icon">
+      <i class="bx bx-shopping-bag"></i>
+    </a>
+
+    <div class="hamburger">
+      <i class="bx bx-menu"></i>
+    </div>
+  </div>
+</nav>
+    <!-- ==== Intro Section Start ==== -->
+		
+	</header>
+    <h3>Please enter login dedtails</h3>
+    <form action=""id="contact-form" method="POST">
+      <!--For the email label-->
+      <div class="form-group">
+        <label class="from-labels" for="email">First Name</label>
+        <input
+          class="form-input"
+          type="text"
+          name="first_name"
+          id="first_name"
+          placeholder="Please enter first name"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label class="from-labels" for="email">Last Name</label>
+        <input
+          class="form-input"
+          type="text"
+          name="last_name"
+          id="last_name"
+          placeholder="Please enter last name"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label class="from-labels" for="email">User name</label>
+        <input
+          class="form-input"
+          type="text"
+          name="username"
+          id="username"
+          placeholder="Please enter username"
+          required
+        />
+      </div>
+
+      <div class="form-group"></div>
+      <!--For the contact label-->
+      <div class="form-group">
+        <label class="from-labels" for="contact">Password</label>
+        <input
+          class="form-input"
+          type="password"
+          name="password"
+          id="password"
+          placeholder="enter your password"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label class="from-labels" for="email">Physical Address</label>
+        <input
+          class="form-input"
+          type="text"
+          name="address"
+          id="address"
+          placeholder="Please enter address"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label class="from-labels" for="email">Phone Number</label>
+        <input
+          class="form-input"
+          type="tel"
+          name="phone_number"
+          id="phone_number"
+          placeholder="073 123 45678"
+          required
+        />
+      </div>
+      <div class="form-group"></div>
+      <!--For the contact label-->
+      <div class="form-group">
+        <label class="from-labels" for="contact">Email</label>
+        <input
+          class="form-input"
+          type="email"
+          name="user_email"
+          id="user_email"
+          placeholder="example@myemail.com"
+          required
+        />
+      </div>
+
+      <!-- The submit button-->
+
+      <button
+        class="button"
+        onclick="event.preventDefault(), register()"
+        type="submit"
+      >
+        Register
+      </button>
+    </form>
+   
+  </body>
+    
+</body>
+</html>

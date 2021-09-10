@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="images/outline.png" type="image/png">
+  <!-- Box icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+  <!--FontAwesome Link-->
+  <script src="https://kit.fontawesome.com/eb54f77c32.js" crossorigin="anonymous"></script>
+  <title>User Login</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/login_style.css">
+
+</head>
+<body>
+  <div class="navbar">
+        <nav class="navigation">
+
+			<!-- Logo -->
+			<div class="logo">
+				<img class="image-logo" src="images/outline.png" alt="Forever Logo">
+			</div>
+
+    
+    <section>
+        <div class="body-container">
+            <div class="container">
+              
+              <div class="form-wrapper">
+                <img src="" alt="" />
+                <h1 class="heading">Login/Register</h1>
+                <div class="form-box">
+                  <form onsubmit="event.preventDefault(); login(); collect()" id="contact-form" >
+                    <!--For the email label-->
+                    <div class="form-group">
+                      <label class="form-labels" for="username">Username</label>
+                      <input
+                        class="form-input"
+                        type="text"
+                        name="user_email"
+                        id="auth_username"
+                        placeholder="enter username"
+                        required
+                      />
+                    </div>
+                    <!--For the contact label-->
+                    <div class="form-group">
+                      <label class="form-labels" for="contact">Password</label>
+                      <input
+                        class="form-input"
+                        type="password"
+                        name="password"
+                        id="auth_password"
+                        placeholder="enter your password"
+                        required
+                      />
+                    </div>
+      
+                    <!-- The submit button-->
+                    <div class="buttons-flex">
+                      <button
+                        class="button"
+                        
+                        type="submit"
+                      >
+                        login
+                      </button>
+      
+                      <a class="register-link" href="register.html">register</a>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+    <script src="js/login.js"></script>
+</body>
+</html>
