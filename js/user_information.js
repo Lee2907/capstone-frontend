@@ -24,7 +24,7 @@ function getUser() {
                 <p class = "product-price">Username: ${data.data.username} </p>
                 <p class = "user_phone"> Password: ${data.data.password}</p>
                 <p class = "user_phone"> Phone Number: ${data.data.phone_number}</p>
-                <p class = "user_phone"> email address: ${data.data.user_email}</p>
+                <p class = "user_phone"> E-mail address: ${data.data.user_email}</p>
                 
 
                 

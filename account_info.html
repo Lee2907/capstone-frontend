@@ -3,37 +3,55 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <!-- Box icons -->
+    <link rel="shortcut icon" href="images/outline.png" type="image/png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
-    <!--FontAwesome Link-->
     <script src="https://kit.fontawesome.com/eb54f77c32.js" crossorigin="anonymous"></script>
     <title>User Info</title>
+	<link rel="stylesheet" href="styles/style.css"/>
     <link rel="stylesheet" href="styles/account.css"/>
     <script src="js/user_information.js"></script>
 </head>
 <body>
-	<nav class="nav">
-	<ul class="nav-list">
-		<li class="nav-item">
-		  <a href="product.html" class="nav-link">Products</a>
-		</li>
-		<li class="nav-item">
-		  <a href="contact_page.html" class="nav-link scroll-link">Contact</a>
-		</li>
-		<li class="nav-item">
-		  <a href="login_page.html" class="nav-link scroll-link">Log In</a>
-		</li>
-		<li class="nav-item">
-		  <a href="register.html" class="nav-link scroll-link">Register</a>
-		</li>
-		<li class="nav-item">
-		  <a href="cart.html" class="nav-link icon"><i class="bx bx-shopping-bag"></i></a>
-		</li>
-	  </ul>
-	</div>
-	</nav>
+	<header>
+		<nav class="navigation">
+
+			<!-- Logo -->
+			<div class="logo">
+				<img class="image-logo" src="images/outline.png" alt="Forever Living">
+			</div>
+
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a href="#home" class="nav-link scroll-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="product.html" class="nav-link">Products</a>
+        </li>
+        <li class="nav-item">
+          <a href="#about" class="nav-link scroll-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="#contact" class="nav-link scroll-link">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a href="account_info.html" class="nav-link scroll-link">Account</a>
+        </li>
+        <li class="nav-item">
+          <a href="cart.html" class="nav-link icon"><i class="bx bx-shopping-bag"></i></a>
+        </li>
+      </ul>
+    </div>
+
+    <a href="cart.html" class="cart-icon">
+      <i class="bx bx-shopping-bag"></i>
+    </a>
+
+    <div class="hamburger">
+      <i class="bx bx-menu"></i>
+    </div>
+  </div>
+</nav>
+
     <div id="user-info"></div>
     </div>
     <div class="update-info">
@@ -64,7 +82,7 @@
 				<button class="search-btn" type="submit">Update</button>
 
 			</form>
-			<button class="delete-button" onclick="deleteUser()"> delete profile</button>
+			<button class="delete-button" onclick="deleteUser()">Delete profile</button>
 
 </body>
 </html>
