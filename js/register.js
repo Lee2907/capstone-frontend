@@ -1,6 +1,6 @@
 // function to register user
 function register() {
-    fetch("https://lee-buka2907.herokuapp.com/user-registration", {
+    fetch("https://lee-buka2907.herokuapp.com/user-registration/", {
       method: "POST",
       body: JSON.stringify({
         first_name: document.getElementById("first_name").value,

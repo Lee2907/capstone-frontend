@@ -9,12 +9,12 @@ function showCart(){
       product_container.innerHTML += `
   
             <div class = "products">
-                <img src="${product.image}" class = "product-image">
+                <img src="${product.product_picture}" class = "product-image">
                 <div class = "product-content"> 
                     <h4 class = "product-title"> ${product.product_name}</h4>
-                    <p class = "product-description"> ${product.brand}</p>
+                    <p class = "product-description"> ${product.description}</p>
                     <p class = "product-price">R${product.price} </p>
-                    <button onclick="addToCart(${product.prod_id})">Add to Cart</button>
+                    <button onclick="addToCart(${product.order_id})">Add to Cart</button>
                 
                 </div>
                 
